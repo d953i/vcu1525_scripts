@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /opt/Xilinx/Vivado/2018.2/settings64.sh
+
 #Load bitstream to Card0 using TCL script
 vivado -mode batch -nojournal -nolog -notrace -source card0_keccak.tcl
 
