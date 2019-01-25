@@ -4,11 +4,16 @@
 - Vivado constraints files for VCU/BCU DDR4 interfaces
 - Vivado TCL script to create test project using Xilinx PCIe DMA IP
 
-![Vivado_Block_Diagram](vcu1525_ballistix_project.png?raw=true "Vivado Block Diagram")
-
 # TCL script usage
 
 In Vivado TCL console source script from directory with all files:<br>
 cd path_to_directory_with_files<br>
 source ./vcu1525_ballistix_project.tcl<br>
+
+# Block Diagram
+![Vivado_Block_Diagram](vcu1525_ballistix_project.png?raw=true "Vivado Block Diagram")
+
+# Address Map
+
+![Vivado_Address_Map](vcu1525_ballistix_address.png?raw=true "Vivado Address Map")
 
