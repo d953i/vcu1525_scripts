@@ -23,4 +23,4 @@ source ./vcu1525_ballistix_project.tcl<br>
 
 # Memory Calibration in HW Manager
 
-![Vivado_HWManager](vcu1525_ballistix_hwmanager.png?raw=true "Vivado Manager")
+![Vivado_HWManager](vcu1525_ballistix_calibration.png?raw=true "Vivado Manager")
