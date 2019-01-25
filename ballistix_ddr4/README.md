@@ -2,16 +2,23 @@
 
 - Vivado "custom part" file for Ballistix Sport LT 2400MT/s 4GB and 8GB UDIMMs
 - Vivado constraints files for VCU/BCU DDR4 interfaces
-- Vivado TCL script to create test project using Xilinx PCIe DMA IP
+- Vivado TCL script to create test project for VCU1525 board (100% compatible with BCU)
 
 # TCL script usage
 
-In Vivado TCL console source script from directory with all files:<br>
-cd path_to_directory_with_files<br>
+<b>Warning!</b> Make sure project builds and works first, so do not customize any project or IP settings.<br><br>
+
+Copy all files in one directory and in Vivado TCL console source script from it.<br>
+For example:<br>
+cd D:/Projects/Hardware-Xilinx-HDL/ballistix_ddr4/<br>
 source ./vcu1525_ballistix_project.tcl<br>
 
 # Block Diagram
 ![Vivado_Block_Diagram](vcu1525_ballistix_project.png?raw=true "Vivado Block Diagram")
+
+# DDR4 Controller IP settings
+
+![Vivado_DDR4_Settings](vcu1525_ballistix_settings.png?raw=true "Vivado DDR4 Settings")
 
 # Address Map
 
