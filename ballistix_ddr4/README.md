@@ -1,4 +1,4 @@
-# Crutial Ballistix Sport LT Vivado support files.
+# BCU1525 DDR4 memory Vivado support files
 
 - Vivado "custom part" file for Ballistix Sport LT 2400MT/s 4GB and 8GB UDIMMs
 - Vivado constraints files for VCU/BCU DDR4 interfaces
