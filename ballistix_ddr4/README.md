@@ -8,7 +8,7 @@
 
 # TCL script usage
 
-In Vivado TCL console source script from directory with all files:
-cd path_to_directory_with_files
-source ./vcu1525_ballistix_project.tcl
+In Vivado TCL console source script from directory with all files:<br>
+cd path_to_directory_with_files<br>
+source ./vcu1525_ballistix_project.tcl<br>
 
