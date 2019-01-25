@@ -6,4 +6,9 @@
 
 ![Vivado_Block_Diagram](vcu1525_ballistix_project.png?raw=true "Vivado Block Diagram")
 
+# TCL script usage
+
+In Vivado TCL console source script from directory with all files:
+cd path_to_directory_with_files
+source ./vcu1525_ballistix_project.tcl
 
