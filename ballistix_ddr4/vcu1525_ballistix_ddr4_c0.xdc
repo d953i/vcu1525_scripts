@@ -121,5 +121,3 @@ set_property  -dict {PACKAGE_PIN AP30 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0
 set_property  -dict {PACKAGE_PIN AR30 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[5]]
 set_property  -dict {PACKAGE_PIN AY27 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[6]]
 set_property  -dict {PACKAGE_PIN BE31 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[7]]
-
-
