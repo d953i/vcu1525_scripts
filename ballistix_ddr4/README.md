@@ -6,10 +6,9 @@
 
 # TCL script usage
 
-<b>Warning!</b>VCU1525 and BCU1525 DDR4 pinout different! Use appropriate constraints file!<br><br>
+<b>Warning!</b> VCU1525 and BCU1525 DDR4 pinout different! Use appropriate constraints file!<br><br>
 
-Copy all files in one directory and in Vivado TCL console source script from it.<br>
-For example:<br>
+Copy all files in one directory and in Vivado TCL console source script from it. For example:<br>
 cd D:/Projects/Hardware-Xilinx-HDL/ballistix_ddr4/<br>
 source ./vcu1525_ballistix_project.tcl<br>
 
