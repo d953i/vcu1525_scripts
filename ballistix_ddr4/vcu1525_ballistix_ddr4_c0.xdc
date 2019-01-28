@@ -1,18 +1,6 @@
 
-#300MHz clock
-#set_property -dict {PACKAGE_PIN AY37 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_p]
-#set_property -dict {PACKAGE_PIN AY38 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_n]
+# For VCU1525 Only! DDR4 C0 interface for UDIMM 64-bit, rank 1.
 
-#PCIe x1
-#set_property -dict {PACKAGE_PIN BD21 IOSTANDARD LVCMOS12} [get_ports pcie_perstn]
-#set_property -dict {PACKAGE_PIN AM10} [get_ports pcie_refclk_clk_n]
-#set_property -dict {PACKAGE_PIN AM11} [get_ports pcie_refclk_clk_p]
-#set_property -dict {PACKAGE_PIN AF1} [get_ports pci_express_x1_rxn]
-#set_property -dict {PACKAGE_PIN AF2} [get_ports pci_express_x1_rxp]
-#set_property -dict {PACKAGE_PIN AF6} [get_ports pci_express_x1_txn]
-#set_property -dict {PACKAGE_PIN AF7} [get_ports pci_express_x1_txp]
-
-# VCU1525/BCU1525 DDR4_C0 interface for UDIMM 64-bit, rank 1.
 set_property -dict {PACKAGE_PIN AU31 IOSTANDARD LVCMOS12 DRIVE 8} [get_ports C0_DDR4_0_reset_n]
 set_property -dict {PACKAGE_PIN AT35 IOSTANDARD SSTL12_DCI} [get_ports C0_DDR4_0_ba[0]]
 set_property -dict {PACKAGE_PIN AT34 IOSTANDARD SSTL12_DCI} [get_ports C0_DDR4_0_ba[1]]
@@ -133,3 +121,16 @@ set_property -dict {PACKAGE_PIN AP30 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_
 set_property -dict {PACKAGE_PIN AR30 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[5]]
 set_property -dict {PACKAGE_PIN AY27 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[6]]
 set_property -dict {PACKAGE_PIN BE31 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_dm_n[7]]
+
+#300MHz clock
+#set_property -dict {PACKAGE_PIN AY37 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_p]
+#set_property -dict {PACKAGE_PIN AY38 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_n]
+
+#PCIe x1
+#set_property -dict {PACKAGE_PIN BD21 IOSTANDARD LVCMOS12} [get_ports pcie_perstn]
+#set_property -dict {PACKAGE_PIN AM10} [get_ports pcie_refclk_clk_n]
+#set_property -dict {PACKAGE_PIN AM11} [get_ports pcie_refclk_clk_p]
+#set_property -dict {PACKAGE_PIN AF1} [get_ports pci_express_x1_rxn]
+#set_property -dict {PACKAGE_PIN AF2} [get_ports pci_express_x1_rxp]
+#set_property -dict {PACKAGE_PIN AF6} [get_ports pci_express_x1_txn]
+#set_property -dict {PACKAGE_PIN AF7} [get_ports pci_express_x1_txp]

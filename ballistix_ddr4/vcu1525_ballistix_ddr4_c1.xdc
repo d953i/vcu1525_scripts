@@ -1,5 +1,5 @@
 
-# VCU1525/BCU1525 DDR4_C1 interface for UDIMM 64-bit, rank 1.
+# For VCU1525 Only! DDR4 C1 interface for UDIMM 64-bit, rank 1.
 
 set_property -dict {PACKAGE_PIN AR17 IOSTANDARD LVCMOS12 DRIVE 8} [get_ports C1_DDR4_0_reset_n]
 set_property -dict {PACKAGE_PIN AU24 IOSTANDARD SSTL12_DCI} [get_ports C1_DDR4_0_ba[0]]

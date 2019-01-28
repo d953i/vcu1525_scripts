@@ -1,12 +1,12 @@
 # BCU1525 DDR4 memory Vivado support files
 
 - Vivado "custom part" file for Ballistix Sport LT 2400MT/s 4GB and 8GB UDIMMs
-- Vivado constraints files for VCU/BCU DDR4 interfaces
-- Vivado TCL script to create test project for VCU1525 board (100% compatible with BCU)
+- Vivado constraints files for VCU1525 anbd BCU1525 DDR4 interfaces
+- Vivado TCL script to create test project for VCU1525 board using DIMM0 (DDR4 C0)
 
 # TCL script usage
 
-<b>Warning!</b> Make sure project builds and works first, so do not customize any project or IP settings.<br><br>
+<b>Warning!</b>VCU1525 and BCU1525 DDR4 pinout different! Use appropriate constraints file!<br><br>
 
 Copy all files in one directory and in Vivado TCL console source script from it.<br>
 For example:<br>
