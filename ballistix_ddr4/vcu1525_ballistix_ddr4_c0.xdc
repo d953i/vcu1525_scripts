@@ -125,12 +125,6 @@ set_property -dict {PACKAGE_PIN BE31 IOSTANDARD POD12_DCI} [get_ports C0_DDR4_0_
 #300MHz clock
 set_property -dict {PACKAGE_PIN AY37 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_p]
 set_property -dict {PACKAGE_PIN AY38 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk0_clk_n]
-set_property -dict {PACKAGE_PIN AW20 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk1_clk_p]
-set_property -dict {PACKAGE_PIN AW19 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk1_clk_n]
-set_property -dict {PACKAGE_PIN F32  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk2_clk_p]
-set_property -dict {PACKAGE_PIN E32  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk2_clk_n]
-set_property -dict {PACKAGE_PIN J16  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk3_clk_p]
-set_property -dict {PACKAGE_PIN H16  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk3_clk_n]
 
 #PCIe x1
 set_property -dict {PACKAGE_PIN BD21 IOSTANDARD LVCMOS12} [get_ports pcie_perstn]

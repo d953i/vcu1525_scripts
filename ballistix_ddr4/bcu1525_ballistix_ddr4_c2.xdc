@@ -121,3 +121,8 @@ set_property -dict {PACKAGE_PIN C37 IOSTANDARD POD12_DCI} [get_ports C2_DDR4_0_d
 set_property -dict {PACKAGE_PIN H33 IOSTANDARD POD12_DCI} [get_ports C2_DDR4_0_dm_n[5]]
 set_property -dict {PACKAGE_PIN G37 IOSTANDARD POD12_DCI} [get_ports C2_DDR4_0_dm_n[6]]
 set_property -dict {PACKAGE_PIN M34 IOSTANDARD POD12_DCI} [get_ports C2_DDR4_0_dm_n[7]]
+
+#300MHz clock
+set_property -dict {PACKAGE_PIN F32  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk2_clk_p]
+set_property -dict {PACKAGE_PIN E32  IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk2_clk_n]
+

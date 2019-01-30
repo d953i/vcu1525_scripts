@@ -121,3 +121,7 @@ set_property -dict {PACKAGE_PIN AY13 IOSTANDARD POD12_DCI} [get_ports C1_DDR4_0_
 set_property -dict {PACKAGE_PIN BB14 IOSTANDARD POD12_DCI} [get_ports C1_DDR4_0_dm_n[5]]
 set_property -dict {PACKAGE_PIN AN14 IOSTANDARD POD12_DCI} [get_ports C1_DDR4_0_dm_n[6]]
 set_property -dict {PACKAGE_PIN AW16 IOSTANDARD POD12_DCI} [get_ports C1_DDR4_0_dm_n[7]]
+
+#300MHz clock
+set_property -dict {PACKAGE_PIN AW20 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk1_clk_p]
+set_property -dict {PACKAGE_PIN AW19 IOSTANDARD DIFF_SSTL12} [get_ports default_300mhz_clk1_clk_n]
