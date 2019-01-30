@@ -38,6 +38,10 @@ endgroup
 startgroup
 set_property -dict [list CONFIG.mode_selection {Basic}] [get_bd_cells xdma_0]
 set_property -dict [list CONFIG.xdma_pcie_64bit_en {true} CONFIG.pf0_msix_cap_table_bir {BAR_1:0} CONFIG.pf0_msix_cap_pba_bir {BAR_1:0}] [get_bd_cells xdma_0]
+set_property -dict [list CONFIG.axilite_master_en {true} CONFIG.axil_master_64bit_en {true}] [get_bd_cells xdma_0]
+set_property -dict [list CONFIG.axilite_master_size {4} CONFIG.axilite_master_scale {Gigabytes}] [get_bd_cells xdma_0]
+set_property -dict [list CONFIG.pciebar2axibar_axil_master {0} CONFIG.pf0_msix_cap_table_bir {BAR_3:2}] [get_bd_cells xdma_0]
+set_property -dict [list CONFIG.pf0_msix_cap_pba_bir {BAR_3:2}] [get_bd_cells xdma_0]
 endgroup
 
 startgroup
@@ -74,8 +78,9 @@ endgroup
 
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 axi_smc
-set_property -dict [list CONFIG.NUM_MI {1} CONFIG.NUM_SI {1} CONFIG.NUM_CLKS {2}] [get_bd_cells axi_smc]
+set_property -dict [list CONFIG.NUM_MI {1} CONFIG.NUM_SI {2} CONFIG.NUM_CLKS {2}] [get_bd_cells axi_smc]
 connect_bd_intf_net [get_bd_intf_pins xdma_0/M_AXI] [get_bd_intf_pins axi_smc/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins xdma_0/M_AXI_LITE] [get_bd_intf_pins axi_smc/S01_AXI]
 connect_bd_net [get_bd_pins xdma_0/axi_aclk] [get_bd_pins axi_smc/aclk]
 connect_bd_net [get_bd_pins xdma_0/axi_aresetn] [get_bd_pins axi_smc/aresetn]
 endgroup
