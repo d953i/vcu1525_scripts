@@ -79,10 +79,10 @@ endgroup
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 axi_smc
 set_property -dict [list CONFIG.NUM_MI {1} CONFIG.NUM_SI {2} CONFIG.NUM_CLKS {2}] [get_bd_cells axi_smc]
+connect_bd_net [get_bd_pins xdma_0/axi_aclk] [get_bd_pins axi_smc/aclk1]
+connect_bd_net [get_bd_pins xdma_0/axi_aresetn] [get_bd_pins axi_smc/aresetn]
 connect_bd_intf_net [get_bd_intf_pins xdma_0/M_AXI] [get_bd_intf_pins axi_smc/S00_AXI]
 connect_bd_intf_net [get_bd_intf_pins xdma_0/M_AXI_LITE] [get_bd_intf_pins axi_smc/S01_AXI]
-connect_bd_net [get_bd_pins xdma_0/axi_aclk] [get_bd_pins axi_smc/aclk]
-connect_bd_net [get_bd_pins xdma_0/axi_aresetn] [get_bd_pins axi_smc/aresetn]
 endgroup
 
 startgroup
@@ -99,7 +99,7 @@ connect_bd_net [get_bd_pins ddr4_c0_reset/peripheral_aresetn] [get_bd_pins ddr4_
 endgroup
 
 startgroup
-connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_smc/aclk1]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_smc/aclk]
 connect_bd_intf_net [get_bd_intf_pins axi_smc/M00_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
 make_bd_intf_pins_external  [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
 set_property name default_300mhz_clk0 [get_bd_intf_ports C0_SYS_CLK_0]
