@@ -33,6 +33,11 @@ source ./dd4_quad_channel.tcl<br>
 
 ![Vivado_HWManager](images/vcu1525_ballistix_calibration.png?raw=true "Vivado Manager")
 
+# DIMM's and base devices documentation
+
+<a href='https://github.com/D953i/vcu1525_scripts/blob/master/ballistix_ddr4/documentation/atf8c1gx64hz.pdf'>Micron SODIMM's MTA8ATF1G64HZ</a><br>
+<a href='https://github.com/D953i/vcu1525_scripts/blob/master/ballistix_ddr4/documentation/8Gb_DDR4_SDRAM.pdf'>Base device MT40A1G8</a>
+
 # Related links
 
 UltraScale/UltraScale+ DDR4 IP - Interface Calibration and Hardware Debug Guide:<br>
